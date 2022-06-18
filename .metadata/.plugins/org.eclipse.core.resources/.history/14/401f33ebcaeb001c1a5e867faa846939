@@ -1,0 +1,122 @@
+package com.array;
+
+import java.util.HashSet;
+import java.util.concurrent.BlockingQueue;
+
+/*abstract class Compute
+{
+	abstract int multiply(int x,int y);
+}*/
+
+
+public class Test {
+
+	/*
+	 * public static void main(String[] args) {
+	 * 
+	 * int r = new Compute() {
+	 * 
+	 * @Override int multiply(int x,int y) { return x*y } } multiply(32,17);
+	 * System.out.println("r"+r); }
+	 * 
+	 * private static void multiply(int i, int j) { // TODO Auto-generated method
+	 * stub
+	 * 
+	 * }
+	 */
+	
+	public static void main(String[] args) {
+		/*
+		 * char v1 = 70,v2=71,v3=72; System.out.println(v1); System.out.println(v2);
+		 * System.out.println(v3);
+		 */
+		
+		
+		/*
+		 * byte x =10; x = (x*20); System.out.println(x);
+		 */
+		
+		/*
+		 * String s1=""; System.out.println(s1.isEmpty());
+		 * System.out.println(s1.trim()+"JAVA");
+		 */
+		
+/*		
+		Maths m = new Maths();
+		m.fn(3,2);
+	}
+}
+	 abstract class Maths{
+		 private int x,y;
+		 public void fn(int x,int y) {
+			 this.x =x;
+			 this.y =y;
+			 System.out.println(Math.pow(x,y));
+		 }
+ 
+	 }*/
+
+/*
+ * char x= '\u0055'; char y ='\u0036'; char z ='\u0065'; System.out.println(x);
+ * System.out.println(y); System.out.println(z);
+ */
+	/*	
+		BlockingQueue<String > a = new BlockingQueue<>();
+		try {
+			a.put("hi");
+			a.put("hello");
+			System.out.println("sss"+a);
+			String tmp = a.take();
+			System.out.println("aa"+tmp);
+			System.out.println("after"+a);
+		} catch (Exception e) {
+			// e: handle exception
+			e.getStackTrace();
+		}
+	}*/
+		//new m();
+		/*
+		HashSet<String> h = new HashSet<String>();
+		h.add("k");
+		h.add("M");
+		h.add(null);
+		for(String s : h) {
+			System.out.println(s);*/
+		
+		
+		/*
+		 * int i=0; String d[] = {"hello T !","Hello J !","Hello W!"}; while(i<4) { try
+		 * { System.out.println(d[i]); i++; } catch (Exception e) { // TODO: handle
+		 * System.out.println(e.toString()); } finally { System.out.println("Hi !");
+		 * if(i<3); else { System.out.println("all the best"); break; } } }
+		 */
+		child o = new child();
+		o.a();
+	}
+	
+	}
+		class b {
+			int x =10;
+		}
+		class  a extends b {
+			int x=15;
+		}
+		class child extends a {
+			int x =1;
+			void s() {
+				System.out.println(x);
+				System.out.println(super.x);
+				System.out.println("value of ");
+				System.out.println(((b)this).x);
+			}
+		}
+
+	
+
+
+/*
+ * class m implements Runnable{ Thread x; m(){ x = new Thread(this,"nusic");
+ * x.start(); } public void run() { System.out.println(x); } }
+ */
+
+

@@ -1,0 +1,58 @@
+package com.array;
+
+/*abstract class Compute
+{
+	abstract int multiply(int x,int y);
+}*/
+
+
+public class Test {
+
+	/*
+	 * public static void main(String[] args) {
+	 * 
+	 * int r = new Compute() {
+	 * 
+	 * @Override int multiply(int x,int y) { return x*y } } multiply(32,17);
+	 * System.out.println("r"+r); }
+	 * 
+	 * private static void multiply(int i, int j) { // TODO Auto-generated method
+	 * stub
+	 * 
+	 * }
+	 */
+	
+	public static void main(String[] args) {
+		/*
+		 * char v1 = 70,v2=71,v3=72; System.out.println(v1); System.out.println(v2);
+		 * System.out.println(v3);
+		 */
+		
+		
+		/*
+		 * byte x =10; x = (x*20); System.out.println(x);
+		 */
+		
+		/*
+		 * String s1=""; System.out.println(s1.isEmpty());
+		 * System.out.println(s1.trim()+"JAVA");
+		 */
+		
+		
+		Maths m = new Maths();
+				m.fn(3,2);
+	}
+}
+	 abstract class Maths{
+		 private int x,y;
+		 public void fn(int x,int y) {
+			 this.x =x;
+			 this.y =y;
+			 System.out.println(Math.pow(x,y));
+		 }
+ 
+	 }
+
+	
+
+

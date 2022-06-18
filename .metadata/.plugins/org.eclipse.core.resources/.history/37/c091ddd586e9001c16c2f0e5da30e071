@@ -1,0 +1,17 @@
+package com.binary.search.array;
+
+public class FindSmallestLetterGreaterThanTarget {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char[] l = {'c', 'f', 'j'};
+		char x  = 'a';
+		 nextGreatestLetter(l,x);
+	}
+
+	private static void nextGreatestLetter(char[] l, char x) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

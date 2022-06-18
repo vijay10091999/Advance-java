@@ -1,0 +1,23 @@
+package com.array;
+
+public class Test {
+
+	public static void main(String[] args) {
+ new a();
+	}
+}
+	
+	class a extends Thread{
+		Thread d;
+		a()
+		{
+			d = new Thread(this,"im");
+			d.start();	
+		}
+		public void run() {
+			System.out.println(d.isAlive());
+		}
+
+}
+
+

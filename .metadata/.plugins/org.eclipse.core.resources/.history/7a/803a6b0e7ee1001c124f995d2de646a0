@@ -1,0 +1,70 @@
+package com.array;
+
+	import java.util.*;
+	import java.lang.*;
+	import java.io.*;
+
+	class pair  
+	{  
+	    long first, second;  
+	    public pair(long first, long second)  
+	    {  
+	        this.first = first;  
+	        this.second = second;  
+	    }  
+	}
+
+	class MinMax {
+		public static void main(String[] args) throws IOException
+		{
+
+	    	//take input from user
+	    	Scanner sc = new Scanner(System.in);
+	    	System.out.println("Enter thr elements of array :");
+	    	
+	    	//take number how much elemnt do you want in array
+	    	int n = sc.nextInt();
+	    	//
+	    	
+	    	
+	    	//element put in array
+	    	int arr[] = new int[n];
+	    	  System.out.println("Enter the elements :");
+	    	  
+	    	  //take array element one by one till n
+	    	for(int i = 0;i<n;i++) {
+	          
+    	        arr[i] = sc.nextInt();
+    	    }
+	            Compute obj = new Compute();
+	            pair product = obj.getMinMax(arr, n); 
+	            System.out.println(product.first+" "+product.second);
+	            
+	        }
+		}
+	
+
+	class Compute 
+	{
+	    static pair getMinMax(int[] arr, long n)  
+	    {
+	        
+	        pair p = new pair(0,0);
+	        p.first = arr[0];
+	        p.second = arr[0];
+	        for(int i=0;i<n;i++){
+	            if(p.first > arr[i]){
+	                p.first =arr[i];
+	            }
+	            if(p.second < arr[i]){
+	                p.second =arr[i];
+	            }
+	        }
+	        return p;
+	            
+	            
+	        }
+	    }
+
+
+

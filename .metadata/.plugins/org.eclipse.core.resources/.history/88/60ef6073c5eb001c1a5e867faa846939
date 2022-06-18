@@ -1,0 +1,26 @@
+package com.array;
+
+abstract class Compute{
+	abstract int multiply(int x,int y);
+}
+
+
+public class Test {
+
+	public static void main(String[] args)
+	{
+
+		int r = new Compute()
+		{
+			@Override
+			int multiply(int x,int y)
+			{
+				return x*y
+			}
+			} multiply(32,17);
+		System.out.println("r"+r);
+	}
+}
+	
+
+

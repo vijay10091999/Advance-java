@@ -1,0 +1,35 @@
+package com.string;
+
+class ExampleMethods{
+	public void Stringmethod() {
+		MethodcharAt(); // its return character value of given index
+		Methodconcat(); //it combines specified strings at end of strings
+	}
+
+	private void Methodconcat() {
+		String name = "vijay"; 
+		name = name.concat("Ankit");
+		System.out.println(name);
+		
+	}
+
+	private void MethodcharAt() {
+		String name = "vijay"; 
+		for(int i = 0;i<name.length();i++) {
+			if(i%2!=0) {
+				System.out.println(name.charAt(i));
+			}
+		}
+	}
+}
+
+
+public class StringMethods {
+
+	public static void main(String[] args) {
+  
+		ExampleMethods e = new ExampleMethods();
+		e.Stringmethod();
+	}
+
+}

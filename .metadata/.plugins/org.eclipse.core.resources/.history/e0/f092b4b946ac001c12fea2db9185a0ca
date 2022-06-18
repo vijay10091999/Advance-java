@@ -1,0 +1,21 @@
+package com.string;
+
+public class StringExample {
+
+	//Need of String -> it makes your application secured. eg-bank application.
+	//Defination of String -> 1. its object that represent sequence of charcater value. 
+	//example -> ABCD = "ABCD"
+	//2. String is immutable -> it can not changed value. 
+	//-> SCP - String constant pool -> it is in inside heap memeory, it is place in heap memory where values of all the string stored. 
+	
+	public static void main(String[] args) {
+		String name = "vijay";
+		name = name.concat("Inje"); //concat - join two words
+		System.out.println(name);
+		
+		String name1 = new String("Ajay");
+		name1.concat("codeouter");
+		System.out.println(name1);
+	}
+
+}

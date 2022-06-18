@@ -1,0 +1,16 @@
+package comj.java8;
+
+import java.util.Arrays;
+
+public class FlatMapExample {
+
+	public static void main(String[] args) {
+         //Map method is used for transformation. 
+		//FlatMap method is used for transformation and flattering 
+//it is used to convert stram of stream into single stream.
+		
+		p1 = Arrays.asList("a","b","c","d");
+		
+	}
+
+}

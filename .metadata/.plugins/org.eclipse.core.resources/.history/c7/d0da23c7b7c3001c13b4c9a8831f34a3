@@ -1,0 +1,50 @@
+package comj.java8;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamNeed {
+
+	public static void main(String[] args) {
+    // streams related to collection framework and group 0f object
+	//streams api is basically perform bulk operation and process the object of collection.
+		
+		//without stream
+ArrayList<Integer> a = new ArrayList<Integer>();
+a.add(10);
+a.add(20);
+a.add(30);
+a.add(32);
+a.add(47);
+System.out.println(a);
+
+ArrayList<Integer> a1 = new ArrayList<Integer>();
+for(Integer i : a) {
+	if(i%2==0)a1.add(i);
+}
+//System.out.println(a1);
+
+ArrayList<Integer> a3 = new ArrayList<Integer>();
+int b ;
+for(Integer i : a) {
+	b= i*2;
+	a3.add(b);
+}
+System.out.println(a1);
+
+//with stream:
+
+List<Integer> z = a.stream().filter(i->i%2==0).collect(Collectors.toList());
+//System.out.println(z);
+
+
+
+
+
+
+
+}
+}
+
+

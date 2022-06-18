@@ -1,0 +1,16 @@
+package com.spring.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.spring.services.UserService;
+
+public class RegisterController {
+
+	public static void main(String[] args) {
+
+		@Autowired
+		private UserService UserService;
+		
+	}
+
+}

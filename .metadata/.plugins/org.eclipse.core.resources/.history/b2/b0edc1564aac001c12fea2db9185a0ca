@@ -1,0 +1,43 @@
+package com.string;
+
+class ExampleMethods{
+	public void Stringmethod() {
+		MethodcharAt(); // its return character value of given index
+		Methodconcat(); //it combines specified strings at end of strings
+		Methodcontains(); // it search sequenced of charcater in string.
+	}
+
+	private void Methodcontains() {
+		String name = "i am vijay";
+		System.out.println(name.contains("am"));
+	}
+
+	private void Methodconcat() {
+		String name = "vijay"; 
+		name = name.concat("Ankit").concat("Hemant");
+		name = "chetan".concat("mayank");
+		System.out.println(name);
+		
+	}
+
+	private void MethodcharAt() {
+		String name = "vijay";            // v i j a y
+		 								 //  0 1 2 3 4
+		for(int i = 0;i<name.length();i++) { 
+			if(i%2!=0) { // for find odd position
+				System.out.println(name.charAt(i));
+			}
+		}
+	}
+}
+
+
+public class StringMethods {
+
+	public static void main(String[] args) {
+  
+		ExampleMethods e = new ExampleMethods();
+		e.Stringmethod();
+	}
+
+}

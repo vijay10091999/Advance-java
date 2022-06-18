@@ -1,0 +1,28 @@
+package com.spring.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class SendDataControllerToView {
+
+	/*Sending data contoller to view */
+	
+	@RequestMapping("/model")
+	public String printname(Model model) {
+		model.addAttribute("name","vijay Ingle");
+		
+		List<String> l = new ArrayList<String>();
+		l.add("vijay");
+		l.add("ajay");
+		l.add("kajal");
+		l.add("nikita");
+		
+		model.addAttribute("f",l);
+		System.out.println("This is my home page");
+		return "index";
+	}
+	
+}
